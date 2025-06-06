@@ -46,7 +46,8 @@
 <body>
 
 <header>
-    <h1>My Portfolio</h1>
+    <img src="https://z-p3-scontent.fdar1-1.fna.fbcdn.net/v/t39.30808-6/470988295_1241338663639893_1669400765987881966_n.jpg?stp=c0.53.480.480a_dst-jpg_s480x480_tt6&_nc_cat=111&ccb=1-7&_nc_sid=a5f93a&_nc_eui2=AeHh-Vk7myYlk7ssxm-LhmF-zbZaaDi3-_TNtlpoOLf79NQ8Xkr3VXbaKRwBdqN2tWofdcQ47foV3dlglqF-HGe9&_nc_ohc=bGKMicIGGqQQ7kNvwETjz0R&_nc_oc=AdkQl6JIaQqopp-j9fVKwFMgQB805aFhucXOEmVdVZDVfDMpLcSUm4r2tXHctdiCwCE&_nc_zt=23&_nc_ht=z-p3-scontent.fdar1-1.fna&_nc_gid=OajgVBGDpcROwrNSRHfaOA&oh=00_AfNzWXsPlIncfKmjtBRe7CR4BX0XrwBXR28uyAFzUYMCng&oe=68488FBB" alt="image">
+    <h1>RASHIDI HASANI</h1>
     <nav>
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
@@ -75,8 +76,11 @@
 </section>
 
 <footer>
-    <p>&copy; 2023 My Portfolio</p>
+    <p>&copy; <span id="year"></span> Rashidi Hasani</p>
 </footer>
-
+<script>
+    // Automatically update copyright year
+    document.getElementById('year').textContent = new Date().getFullYear();
+</script>
 </body>
 </html>
