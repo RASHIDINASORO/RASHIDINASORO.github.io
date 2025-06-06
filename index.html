@@ -14,16 +14,49 @@
         header {
             background: #35424a;
             color: #ffffff;
-            padding: 20px 0;
-            text-align: center;
+            padding: 0;
+            text-align: left;
+            display: flex;
+            align-items: center;
+            min-height: 300px;
+        }
+        .profile-img {
+            width: 260px;
+            height: 260px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin: 40px 40px 40px 80px;
+            background: #fff;
+            box-shadow: 0 0 20px rgba(0,0,0,0.15);
+        }
+        .header-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            min-height: 260px;
+        }
+        .main-name {
+            font-size: 2.8rem;
+            font-weight: bold;
+            margin: 0 0 18px 0;
+            letter-spacing: 2px;
+            width: 50%;
+        }
+        .sub-info {
+            margin-top: 0;
+            margin-bottom: 0;
+            font-size: 1.1rem;
+            color: #d1d1d1;
         }
         nav {
-            margin: 20px 0;
+            margin: 18px 0 0 0;
         }
         nav a {
-            margin: 0 15px;
+            margin: 0 18px 0 0;
             color: #ffffff;
             text-decoration: none;
+            font-size: 1rem;
         }
         section {
             padding: 20px;
@@ -41,23 +74,39 @@
             bottom: 0;
             width: 100%;
         }
-        img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 50%;
+        @media (max-width: 900px) {
+            header {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                min-height: unset;
+            }
+            .profile-img {
+                margin: 30px 0 0 0;
+            }
+            .main-name {
+                width: 100%;
+            }
+            .header-content {
+                min-height: unset;
+                align-items: center;
+            }
         }
     </style>
 </head>
 <body>
 
 <header>
-    <img src="https://z-p3-scontent.fdar1-1.fna.fbcdn.net/v/t39.30808-6/470988295_1241338663639893_1669400765987881966_n.jpg?stp=c0.53.480.480a_dst-jpg_s480x480_tt6&_nc_cat=111&ccb=1-7&_nc_sid=a5f93a&_nc_eui2=AeHh-Vk7myYlk7ssxm-LhmF-zbZaaDi3-_TNtlpoOLf79NQ8Xkr3VXbaKRwBdqN2tWofdcQ47foV3dlglqF-HGe9&_nc_ohc=bGKMicIGGqQQ7kNvwETjz0R&_nc_oc=AdkQl6JIaQqopp-j9fVKwFMgQB805aFhucXOEmVdVZDVfDMpLcSUm4r2tXHctdiCwCE&_nc_zt=23&_nc_ht=z-p3-scontent.fdar1-1.fna&_nc_gid=OajgVBGDpcROwrNSRHfaOA&oh=00_AfNzWXsPlIncfKmjtBRe7CR4BX0XrwBXR28uyAFzUYMCng&oe=68488FBB" alt="image">
-    <h1>RASHIDI HASANI</h1>
-    <nav>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-    </nav>
+    <img class="profile-img" src="https://z-p3-scontent.fdar1-1.fna.fbcdn.net/v/t39.30808-6/470988295_1241338663639893_1669400765987881966_n.jpg?stp=c0.53.480.480a_dst-jpg_s480x480_tt6&_nc_cat=111&ccb=1-7&_nc_sid=a5f93a&_nc_eui2=AeHh-Vk7myYlk7ssxm-LhmF-zbZaaDi3-_TNtlpoOLf79NQ8Xkr3VXbaKRwBdqN2tWofdcQ47foV3dlglqF-HGe9&_nc_ohc=bGKMicIGGqQQ7kNvwETjz0R&_nc_oc=AdkQl6JIaQqopp-j9fVKwFMgQB805aFhucXOEmVdVZDVfDMpLcSUm4r2tXHctdiCwCE&_nc_zt=23&_nc_ht=z-p3-scontent.fdar1-1.fna&_nc_gid=OajgVBGDpcROwrNSRHfaOA&oh=00_AfNzWXsPlIncfKmjtBRe7CR4BX0XrwBXR28uyAFzUYMCng&oe=68488FBB" alt="image">
+    <div class="header-content">
+        <div class="main-name">RASHIDI HASANI</div>
+        <div class="sub-info">Web Developer | Designer | Tech Enthusiast</div>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </div>
 </header>
 
 <section id="about">
