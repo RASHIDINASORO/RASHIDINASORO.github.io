@@ -6,19 +6,22 @@
     <title>Rashidi Hasani</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI';
+            line-height: 1.6;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background: linear-gradient(135deg, #f8fafc 0%, #e0e7ff 100%);
+            color: #22223b;
         }
         header {
-            background: #35424a;
-            color: #ffffff;
+            background: linear-gradient(90deg, #3a86ff 0%, #8338ec 100%);
+            color: #fff;
             padding: 0;
             text-align: left;
             display: flex;
             align-items: center;
             min-height: 300px;
+            box-shadow: 0 4px 24px rgba(58,134,255,0.10);
         }
         .profile-img {
             width: 260px;
@@ -27,7 +30,8 @@
             border-radius: 50%;
             margin: 40px 40px 40px 80px;
             background: #fff;
-            box-shadow: 0 0 20px rgba(0,0,0,0.15);
+            box-shadow: 0 0 30px rgba(131,56,236,0.15);
+            border: 6px solid #fff;
         }
         .header-content {
             flex: 1;
@@ -41,13 +45,15 @@
             font-weight: bold;
             margin: 0 0 18px 0;
             letter-spacing: 2px;
-            width: 50%;
+            width: 60%;
+            color: #ffd60a;
+            text-shadow: 2px 2px 8px #3a86ff33;
         }
         .sub-info {
             margin-top: 0;
             margin-bottom: 0;
-            font-size: 1.1rem;
-            color: #d1d1d1;
+            font-size: 1.2rem;
+            color: #e0aaff;
             margin-right: 0%;
         }
         nav {
@@ -55,25 +61,66 @@
         }
         nav a {
             margin: 0 18px 0 0;
-            color: #ffffff;
+            color: #ffd60a;
             text-decoration: none;
-            font-size: 1rem;
+            font-size: 1.1rem;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        nav a:hover {
+            color: #fff;
+            text-shadow: 0 0 8px #8338ec;
         }
         section {
-            padding: 20px;
-            margin: 20px;
-            background: #ffffff;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 28px 28px 24px 28px;
+            margin: 28px 18px;
+            background: linear-gradient(120deg, #fff 60%, #e0aaff22 100%);
+            border-radius: 12px;
+            box-shadow: 0 4px 24px rgba(58,134,255,0.08);
+            border-left: 7px solid #3a86ff;
+        }
+        h2 {
+            color: #3a86ff;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+        }
+        h3 {
+            color: #8338ec;
+            margin-top: 0;
+        }
+        ul {
+            padding-left: 22px;
+        }
+        ul ul {
+            background: #f1f3f8;
+            border-radius: 8px;
+            padding: 10px 18px;
+            margin: 10px 0 0 0;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        a {
+            color: #3a86ff;
+            transition: color 0.2s;
+        }
+        a:hover {
+            color: #8338ec;
         }
         footer {
             text-align: center;
-            padding: 10px 0;
-            background: #35424a;
-            color: #ffffff;
-            position: relative;
-            bottom: 0;
-            width: 100%;
+            padding: 14px 0;
+            background: linear-gradient(90deg, #3a86ff 0%, #8338ec 100%);
+            color: #ffd60a;
+            font-weight: 500;
+            letter-spacing: 1px;
+            font-size: 1.1rem;
+            box-shadow: 0 -2px 16px #3a86ff22;
+        }
+        a img {
+            width: 215px;
+            height: 190px;
+            border-radius: 0%;
         }
         @media (max-width: 900px) {
             header {
@@ -83,19 +130,21 @@
                 min-height: unset;
             }
             .profile-img {
-                margin: 10px 0 0 0;
-                border-radius: 50%;
-                border-color: yellow;
-                border-width: 5px;
-                height: 200px;
-                width: 200px;
+                margin: 18px 0 0 0;
+                height: 180px;
+                width: 180px;
             }
             .main-name {
-                width: 50%;
+                width: 90%;
+                font-size: 2.1rem;
             }
             .header-content {
                 min-height: unset;
                 align-items: center;
+            }
+            section {
+                margin: 18px 4px;
+                padding: 18px 8px 14px 8px;
             }
         }
     </style>
@@ -135,9 +184,9 @@
 <section id="projects">
     <h2>Projects</h2>
     <h3>Here are some of the projects I've worked on</h3>
-    <ul>
+    <ol>
         <li>
-            <strong>Kilimolink:</strong> Kilimolink is an innovative digital platform designed to connect farmers, buyers, and agricultural stakeholders in a seamless online marketplace. The system enables farmers to showcase their products, access real-time market prices, and communicate directly with potential buyers, reducing the need for intermediaries and ensuring fairer prices. Kilimolink also provides educational resources, weather updates, and best farming practices to empower users with knowledge and tools for better productivity. 
+            <strong>Kilimolink</strong><br> Kilimolink is an innovative digital platform designed to connect farmers, buyers, and agricultural stakeholders in a seamless online marketplace. The system enables farmers to showcase their products, access real-time market prices, and communicate directly with potential buyers, reducing the need for intermediaries and ensuring fairer prices. Kilimolink also provides educational resources, weather updates, and best farming practices to empower users with knowledge and tools for better productivity. 
             <br><br>
             <strong>Benefits of Kilimolink:</strong>
             <ul>
@@ -148,20 +197,20 @@
                 <li><strong>Community Building:</strong> Kilimolink fosters a supportive network among farmers, buyers, and experts, encouraging collaboration and growth.</li>
             </ul>
             <br>
-            <a href="https://final-project-sepia-delta.vercel.app/" target="_blank" style="color: #35424a; text-decoration: underline;">Access Kilimolink</a>
+            <a href="https://final-project-sepia-delta.vercel.app/" target="_blank"><img src="https://th.bing.com/th/id/OIP.pEPlFN84MUEabP9siU0lGwHaHM?rs=1&pid=ImgDetMain&cb=idpwebp2&o=7&rm=3" alt=""><br>https://kilimolink-tanzania.co.tz</a>
         </li>
-        <li>Project 2: Description of project 2.</li>
-        <li>Project 3: Description of project 3.</li>
-    </ul>
+        <!-- <li>Project 2: Description of project 2.</li>
+        <li>Project 3: Description of project 3.</li> -->
+    </ol>
 </section>
 
 <section id="contact">
     <h2>Contact Me</h2>
-    <p>If you'd like to get in touch, feel free to reach out via email at <a href="https://me.com/?gar=WzEyMF0">rashidinasoro912@gmail.com</a> </p>
+    <p>If you'd like to get in touch, feel free to reach out via email at <a href="mailto:rashidinasoro912@gmail.com">rashidinasoro912@gmail.com</a></p>
 </section>
 
 <footer>
-    <p>&copy; <span id="year"></span> Rashidi Hasani</p>
+    <p>&copy; Copyright <span id="year"></span> Rashidi Hasani</p>
 </footer>
 <script>
     // Automatically update copyright year
