@@ -1,4 +1,3 @@
-// src/routes/Router.jsx
 import { lazy, Suspense } from "react";
 import { createBrowserRouter } from "react-router-dom";
 import Loading from "../components/common/loading/Loading";
@@ -6,10 +5,6 @@ import ErrorPage from "../error-page";
 
 const Home = lazy(() => import("../pages/Home"));
 const Main = lazy(() => import("../layouts/Main"));
-
-// Get the environment variable. Use a conditional check to ensure it's not an empty string.
-const repoName = import.meta.env.VITE_REPO_NAME;
-const basename = repoName ? `/${repoName}` : undefined;
 
 export const router = createBrowserRouter(
   [
@@ -29,6 +24,6 @@ export const router = createBrowserRouter(
       ],
     },
   ],
-  // Conditionally apply the basename. If it's undefined, the router defaults to "/".
-  { basename }
+  // Correctly sets the basename to undefined, so the router uses the root path.
+  { basename: undefined }
 );
