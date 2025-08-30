@@ -14,7 +14,7 @@ const projectData = [
     title: "Product Admin Dashboard",
     description:
       "I focus on crafting smooth, responsive interfaces that balance aesthetic appeal with practical functionality. Technologies used: Figma, Node.js, Express.js, SQLite.",
-    link: "#!",
+    link: "https://github.com/RASHIDINASORO/kilimo-link",
   },
   {
     id: 2,
@@ -23,7 +23,7 @@ const projectData = [
     title: "cybersecurity detection Dashboard",
     description:
       "Designed an intuitive dashboard for security management , emphasizing clarity and user efficiency. Technologies used: Python(flask), deepfake,deepface-detection,machine learning.",
-    link: "#!",
+    link: "https://github.com/RASHIDINASORO/cyber-solution",
   },
   {
     id: 3,
@@ -87,7 +87,7 @@ const Portfolio = () => {
       </div>
       <div className="text-center">
         <a
-          href="#!"
+          href="https://github.com/RASHIDINASORO"
           className="btn btn-primary py-3 px-6 mt-12.5 text-center text-[16px] font-semibold"
         >
           More Project

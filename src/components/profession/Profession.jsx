@@ -35,18 +35,18 @@ const Profession = () => {
             interfaces, and building robust web applications that deliver value
             and usability.
           </p>
-          <p className="text-xs sm:text-lg font-normal text-gray-400">
+          {/* <p className="text-xs sm:text-lg font-normal text-gray-400">
             My approach combines creativity and technical expertise to deliver
             solutions that are both visually appealing and highly functional for
             users.
-          </p>
+          </p> */}
         </div>
-        <a
+        {/* <a
           href="#!"
           className="mt-5 md:mt-12.5 btn btn-primary text-white w-fit md:py-3 md:px-6 text-[12px] sm:text-[16px] font-semibold max-md:mx-auto max-md:mb-5"
         >
           Say Hello!
-        </a>
+        </a> */}
       </div>
       <div className="">
         {rolesData.map((role, index) => (

@@ -15,7 +15,7 @@ const Profile = () => {
           <div className="max-w-106 h-117 object-fill overflow-hidden rounded-xl">
             <img
               className="bg-soft-white h-[120%] object-cover"
-              src={person}
+              src={card3}
               alt=""
             />
           </div>
@@ -33,15 +33,15 @@ const Profile = () => {
           <h2
             className={`text-2xl xxs:text-3xl sm:text-4xl lg:text-[38px] text-[min(24px,38px)] max-md:text-center font-semibold mb-8`}
           >
-            I am Professional UI/UX Designer and Full-stack programmer
+            I am UI/UX Designer 
+            Front-end Developer, Back-end Developer
           </h2>
           <div
             className={`text-xs xs:text-[16px] lg:text-lg font-normal max-md:text-center text-gray-600`}
           >
             <p className={``}>
               I design and develop services for customers specializing creating
-              stylish, modern websites, web services and online stores. My
-              passion is to design digital user experiences.
+              stylish, modern websites, web services and online stores.
             </p>
             <p className="mt-3">
               I design and develop services for customers specializing creating
@@ -57,7 +57,7 @@ const Profile = () => {
             </a>
             <a
               className={`btn xxs:btn-lg px-6 max-xs:px-2 xxs:py-3 hover:border-picto-primary bg-white duration-300 transition-all hover:text-picto-primary  ms-4 text-xs xxs:text-[14px] sm:text-[16px]`}
-              href="#!"
+              href="cv.pdf"
             >
               <FontAwesomeIcon icon={faDownload} /> Download CV
             </a>

@@ -35,7 +35,7 @@ const Footer = () => {
           ))}
         </div>
         <p className="text-[12px] sm:text-[16px]">
-          Copyright &copy; {copyrightYear} Picto.
+          Copyright &copy; {copyrightYear} Rashid.
         </p>
       </div>
       <p className="text-white text-center max-xs:text-[12px] max-md:text-[14px] w-full py-10">
@@ -45,7 +45,7 @@ const Footer = () => {
           className="underline font-bold"
           target="_blank"
         >
-          Rassidi Hasani
+          Rashid Hasan
         </a>
       </p>
     </div>
