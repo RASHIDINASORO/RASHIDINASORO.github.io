@@ -1,4 +1,4 @@
-import person from "../../assets/images/person2.png";
+import udsm from "../../assets/images/udsm.webp";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
 import SocialMedia from "../common/socialMedia/SocialMedia";
@@ -12,41 +12,38 @@ const Profile = () => {
       <div className="flex max-md:flex-col justify-between items-center gap-6">
         {/* Profile image */}
         <div className="xxl:max-w-106 w-auto h-auto xxl:max-h-126">
-          <div className="max-w-106 h-117 object-fill overflow-hidden rounded-xl">
+          <div className="max-w-106 h-117 bg-white object-fill overflow-hidden rounded-xl">
             <img
-              className="bg-soft-white h-[120%] object-cover"
-              src={person}
+              className="bg-white h-[100%] object-contain border-4 border-white rounded-xl hover:scale-105 transition-transform duration-300"
+              src={udsm}
               alt=""
             />
           </div>
-          {/* Social media section */}
-          <div className="relative bottom-9">
-            <div className="flex justify-center">
-              <div className="px-6 max-w-66 py-3 z-50 text-center bg-white rounded-[4px] center shadow-2xl drop-shadow-2xl shadow-white">
-                <SocialMedia />
-              </div>
-            </div>
-          </div>
+         
         </div>
 
         <div className="max-sm:w-full w-[33rem]">
-          <h2
-            className={`text-2xl xxs:text-3xl sm:text-4xl lg:text-[38px] text-[min(24px,38px)] max-md:text-center font-semibold mb-8`}
-          >
-            I am UI/UX Designer 
-            Front-end Developer, Back-end Developer
-          </h2>
-          <div
-            className={`text-xs xs:text-[16px] lg:text-lg font-normal max-md:text-center text-gray-600`}
-          >
-            <p className={``}>
-              I design and develop services for customers specializing creating
-              stylish, modern websites, web services and online stores.
-            </p>
-            <p className="mt-3">
-              I design and develop services for customers specializing creating
-              stylish, modern websites, web services.
-            </p>
+          <h3 className="text-3xl font-bold mb-12 text-center text-gray-800">
+            Educational Journey
+          </h3>
+          <div className="bg-white p-8 rounded-2xl shadow-lg max-w-3xl mx-auto transform hover:scale-105 transition-transform duration-300">
+            <div className="flex flex-col md:flex-row items-center gap-8">
+              <div className="relative">
+                <div className="absolute inset-0 bg-blue-100 rounded-full opacity-20"></div>
+              </div>
+              <div className="text-center md:text-left">
+                <h4 className="text-2xl font-bold text-gray-800 mb-2">
+                  University of Dar es Salaam
+                </h4>
+                <p className="text-lg text-blue-600 mb-2">BSc in Computer Science</p>
+                <p className="text-gray-500 flex items-center justify-center md:justify-start gap-2">
+                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M10 2a6 6 0 00-6 6v3.586l-.707.707A1 1 0 004 14h12a1 1 0 00.707-1.707L16 11.586V8a6 6 0 00-6-6zM10 18a3 3 0 01-3-3h6a3 3 0 01-3 3z" />
+                  </svg>
+                  2022 - 2025
+                </p>
+              </div>
+            </div>
           </div>
           <div className="mt-8 flex max-md:justify-center">
             <a

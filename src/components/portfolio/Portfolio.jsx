@@ -1,100 +1,157 @@
-import Projects from "./Projects";
-import card1 from "../../assets/images/portfolio-images/card-1.png";
-import card2 from "../../assets/images/portfolio-images/card-2.png";
-import card3 from "../../assets/images/portfolio-images/card-3.png";
-import card4 from "../../assets/images/portfolio-images/card-4.png";
-import card5 from "../../assets/images/portfolio-images/card-5.png";
-import card6 from "../../assets/images/portfolio-images/card-6.png";
-// Project data
-const projectData = [
+import React from "react";
+import { motion } from "framer-motion";
+import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
+
+const projects = [
   {
     id: 1,
-    image: card1,
-    category: "UI-UX  DESIGN AND FULL-STACK DEVELOPMENT",
-    title: "Product Admin Dashboard",
+    title: "Security Monitoring Dashboard",
     description:
-      "I focus on crafting smooth, responsive interfaces that balance aesthetic appeal with practical functionality. Technologies used: Figma, Node.js, Express.js, SQLite.",
-    link: "https://github.com/RASHIDINASORO/kilimo-link",
+      "A full-stack application that provides real-time monitoring of security concerns. Seamlessly detect misinformation from social media platforms like facebook and instagram, detect forged document like cards, detect phishing sms in real-time!",
+    image: "/images/security dashboard.png",
+    githubLink: "https://github.com/RASHIDINASORO/cyber-solution",
+    liveLink: "#",
+    techStack: ["Python", "Flask", "Pandas"],
   },
   {
     id: 2,
-    image: card2,
-    category: "FULL-STACK DEVELOPMENT",
-    title: "cybersecurity detection Dashboard",
+    title: "Kilimolink ",
     description:
-      "Designed an intuitive dashboard for security management , emphasizing clarity and user efficiency. Technologies used: Python(flask), deepfake,deepface-detection,machine learning.",
-    link: "https://github.com/RASHIDINASORO/cyber-solution",
+      "A responsive website for agriculture business. Features a clean and modern design, easy navigation, and a responsive layout.",
+    image: "/images/prices management.png",
+    githubLink: "https://github.com/RASHIDINASORO/kilimo-link",
+    liveLink: "#",
+    techStack: ["Node.js", "SQLite", "Express.js"],
   },
-  {
-    id: 3,
-    image: card3,
-    category: "UI-UX DESIGN",
-    title: "Product Admin Dashboard",
-    description:
-      "Developed a modern admin panel with a focus on usability and seamless navigation for end users and so on.",
-    link: "#!",
-  },
+  // {
+  //   id: 3,
+  //   title: "Tanzanian Tutors",
+  //   description:
+  //     "An educational platform built on Moodle that provides quality education at affordable prices, The platform offers various courses to help students excel at their grades.",
+  //   image: "/images/tanzanian-tutors.png",
+  //   githubLink: null,
+  //   liveLink: "#",
+  //   techStack: ["Moodle", "Custom Plugins"],
+  // },
   // {
   //   id: 4,
-  //   image: card4,
-  //   category: "UI-UX DESIGN",
-  //   title: "Product Admin Dashboard",
+  //   title: "Neutralfy",
   //   description:
-  //     "Created a responsive dashboard layout that adapts smoothly across devices and screen sizes and so on.",
-  //   link: "#!",
-  // },
-  // {
-  //   id: 5,
-  //   image: card5,
-  //   category: "UI-UX DESIGN",
-  //   title: "Product Admin Dashboard",
-  //   description:
-  //     "Implemented interactive charts and widgets to visualize product data effectively for stakeholders.",
-  //   link: "#!",
-  // },
-  // {
-  //   id: 6,
-  //   image: card6,
-  //   category: "UI-UX DESIGN",
-  //   title: "Product Admin Dashboard",
-  //   description:
-  //     "Enhanced user experience by streamlining workflows and optimizing interface components and so on.",
-  //   link: "#!",
+  //     "Neutralfy is a comprehensive carbon credit marketplace platform that democratizes carbon markets for Africa, It provides AI-driven verification, blockchain technology, and a multi-stakeholder ecosystem.",
+  //   image: "/images/neutralfy.png",
+  //   githubLink: "https://github.com/askmgm/neutralfy",
+  //   liveLink: "#",
+  //   techStack: ["React", "Express", "MySQL", "Node.js"],
   // },
 ];
 
-const Portfolio = () => {
+const Projects = () => {
   return (
-    <div
-      className="content mt-10 md:mt-15 xl:mt-25 mb-10 md:mb-25 max-xxl:p-2"
-      id="portfolio"
-    >
-      <div className="xl:mb-17.5 mb-5">
-        <div className="max-sm:px-2 text-center mx-auto max-w-144.25">
-          <p className="section-title ">Portfolio</p>
-          <p className="font-normal text-[18px] max-sm:text-[14px] pt-6 text-gray-400">
+    <section id="projects" className="py-20 bg-white">
+      <div className="container mx-auto px-4 max-w-6xl">
+        <motion.div
+          className="mb-16 text-center"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 1 }}
+          viewport={{ once: true }}
+        >
+          <h2 className="text-4xl font-bold mb-4 text-blue-600">My Projects</h2>
+          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             Here's a selection of my recent work, showcasing my skills in
             creating user-centric and visually appealing interfaces.
           </p>
-        </div>
-      </div>
-      <div className="mx-auto flex justify-center">
-        <div className="grid xl:grid-cols-3 md:grid-cols-2 gap-6">
-          {projectData.map((data, index) => (
-            <Projects data={data} key={index} />
+        </motion.div>
+
+        <div className="space-y-28">
+          {projects.map((project, index) => (
+            <motion.div
+              key={project.id}
+              className={`flex flex-col lg:flex-row gap-8 items-center`}
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+            >
+              {/* Project Image */}
+              <div className="w-full lg:w-1/2">
+                <div className="overflow-hidden rounded-xl shadow-lg">
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-auto object-cover transform hover:scale-105 transition-transform duration-500"
+                  />
+                </div>
+              </div>
+
+              {/* Project Details */}
+              <div className="w-full lg:w-1/2">
+                <h3 className="text-2xl font-bold mb-3 text-gray-800">{project.title}</h3>
+                <p className="text-gray-600 mb-6">{project.description}</p>
+
+                {/* Tech Stack */}
+                <div className="flex flex-wrap gap-2 mb-6">
+                  {project.techStack.map((tech) => (
+                    <span
+                      key={tech}
+                      className="px-3 py-1 bg-gray-100 text-gray-700 text-sm font-medium rounded-full"
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+
+                {/* Links */}
+                <div className="flex gap-4">
+                  {project.githubLink && (
+                    <a
+                      href={project.githubLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 px-4 py-2 github-button bg-gray-800 text-white rounded-lg hover:bg-gray-900 transition-colors duration-300"
+                    >
+                      <FaGithub /> GitHub
+                    </a>
+                  )}
+                  <a
+                    href={project.liveLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 px-4 py-2 live-demo-button bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors duration-300"
+                  >
+                    <FaExternalLinkAlt /> Live Demo
+                  </a>
+                </div>
+              </div>
+            </motion.div>
           ))}
         </div>
-      </div>
-      <div className="text-center">
-        <a
-          href="https://github.com/RASHIDINASORO"
-          className="btn btn-primary py-3 px-6 mt-12.5 text-center text-[16px] font-semibold"
+
+        {/* See All Projects Link */}
+        <motion.div
+          className="mt-20 text-center"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
         >
-          More Project
-        </a>
+          <a
+            href="https://github.com/RASHIDINASORO"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-3 px-6 py-4 bg-gradient-to-r from-blue-600 to-blue-700 text-white text-base font-medium rounded-full shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300"
+          >
+            <FaGithub className="text-xl" />
+            See All My Projects
+            <FaExternalLinkAlt className="text-sm" />
+          </a>
+        </motion.div>
       </div>
-    </div>
+    </section>
   );
 };
 
-export default Portfolio;
+export default Projects;
+
+
+

@@ -19,6 +19,12 @@ const rolesData = [
     description:
       "I build responsive and high-performance web applications using modern technologies, ensuring accessibility, scalability, and maintainability.",
   },
+  {
+    id: 4,
+    title: "Mobile App Development",
+    description:
+      "I build responsive and high-performance android applications using modern technologies, ensuring accessibility, scalability, and maintainability.",
+  },
 ];
 
 const Profession = () => {
