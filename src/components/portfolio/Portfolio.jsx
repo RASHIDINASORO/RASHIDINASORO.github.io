@@ -23,16 +23,16 @@ const projects = [
     liveLink: "#",
     techStack: ["Node.js", "SQLite", "Express.js"],
   },
-  // {
-  //   id: 3,
-  //   title: "Tanzanian Tutors",
-  //   description:
-  //     "An educational platform built on Moodle that provides quality education at affordable prices, The platform offers various courses to help students excel at their grades.",
-  //   image: "/images/tanzanian-tutors.png",
-  //   githubLink: null,
-  //   liveLink: "#",
-  //   techStack: ["Moodle", "Custom Plugins"],
-  // },
+  {
+    id: 3,
+    title: "Agregator Platform",
+    description:
+      "A platform built that provides quick payments for a particular service. The platform offers various payment options to help customers to pay for a services.",
+    image: "/images/agregate.png",
+    githubLink: "https://github.com/RASHIDINASORO/agregator",
+    liveLink: "#",
+    techStack: ["Node.js", "Express", "Pesapal", "MySQL" ],
+  },
   // {
   //   id: 4,
   //   title: "Neutralfy",

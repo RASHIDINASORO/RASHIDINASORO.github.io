@@ -6,7 +6,7 @@ import SocialMedia from "../common/socialMedia/SocialMedia";
 const Profile = () => {
   return (
     <div
-      className={`relative mx-4 xxl:mx-0.5 -bottom-20 lg:-bottom-28 z-10 rounded-2xl bg-white drop-shadow-2xl max-xl:mb-5 shadow-white xl:p-28 lg:p-20 md:p-16 sm:p-10 p-4`}
+      className={`relative mx-4 xxl:mx-0.5 -bottom-20 lg:-bottom-28 z-10 rounded-2xl drop-shadow-2xl max-xl:mb-5 shadow-white xl:p-28 lg:p-20 md:p-16 sm:p-10 p-4`}
       id="profile"
     >
       <div className="flex max-md:flex-col justify-between items-center gap-6">
@@ -14,7 +14,7 @@ const Profile = () => {
         <div className="xxl:max-w-106 w-auto h-auto xxl:max-h-126">
           <div className="max-w-106 h-117 bg-white object-fill overflow-hidden rounded-xl">
             <img
-              className="bg-white h-[100%] object-contain border-4 border-white rounded-xl hover:scale-105 transition-transform duration-300"
+              className=" h-[100%] object-contain border-4 border-white rounded-xl hover:scale-105 transition-transform duration-300"
               src={udsm}
               alt=""
             />
@@ -28,9 +28,7 @@ const Profile = () => {
           </h3>
           <div className="bg-white p-8 rounded-2xl shadow-lg max-w-3xl mx-auto transform hover:scale-105 transition-transform duration-300">
             <div className="flex flex-col md:flex-row items-center gap-8">
-              <div className="relative">
-                <div className="absolute inset-0 bg-blue-100 rounded-full opacity-20"></div>
-              </div>
+              
               <div className="text-center md:text-left">
                 <h4 className="text-2xl font-bold text-gray-800 mb-2">
                   University of Dar es Salaam
