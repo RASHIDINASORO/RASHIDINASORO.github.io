@@ -1,4 +1,5 @@
 import Marquee from "react-fast-marquee";
+import utaanisec from "../../assets/images/utaanisec.jpg";
 
 const brandLogos = [
   {
@@ -14,7 +15,7 @@ const brandLogos = [
     alt: "CRDB Logo",
   },
   {
-    src: "https://z-p3-scontent.fdar1-1.fna.fbcdn.net/v/t39.30808-6/486804951_122104998200813312_2949687168240479922_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeGJPUKOYsVAIvQWYvvDxErLUpm8zY4l1tJSmbzNjiXW0vSsgrNchdLDMqdljxyX4wk10UFFwIXhsl6kyS6RSIJB&_nc_ohc=CrmV-TsoAQYQ7kNvwFlnfb2&_nc_oc=AdnKdhDplu2WtHcZYv2IRPkExD7XMj1fQ62yaaokH8e0BW3Pf7Se_yiGIYzmuA1ML3A&_nc_zt=23&_nc_ht=z-p3-scontent.fdar1-1.fna&_nc_gid=wdlrypKPGs4ZmiHKsuwYbA&oh=00_AfUVKKlADhVa7ABu4puJRr81IAZkke_xmVD_b7joiJKx7A&oe=68BA36EB",
+    src: {utaanisec},
     alt: "Utaani Secondary School Logo",
   },
   {
