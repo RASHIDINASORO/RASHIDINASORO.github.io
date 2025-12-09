@@ -15,7 +15,7 @@ const brandLogos = [
     alt: "CRDB Logo",
   },
   {
-    src: utaanisec,
+    src: "https://i.imgur.com/bsJsPON.jpeg",
     alt: "Utaani Secondary School Logo",
   },
   {
