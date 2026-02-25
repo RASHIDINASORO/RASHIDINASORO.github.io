@@ -3,7 +3,7 @@ import utaanisec from "../../assets/images/utaanisec.jpg";
 
 const brandLogos = [
   {
-    src: "https://images.seeklogo.com/logo-png/63/1/baraza-la-kiswahili-tanzania-bakita-logo-png_seeklogo-631124.png",
+    src: "https://i.imgur.com/x2jNnQGl.png",
     alt: "BAKITA Logo",
   },
   {
