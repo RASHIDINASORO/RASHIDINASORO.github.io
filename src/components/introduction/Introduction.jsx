@@ -7,7 +7,7 @@ const informationSummaryData = [
   {
     id: 1,
     title: "Experience",
-    description: "2 Years",
+    description: "3+ Years",
   },
   {
     id: 2,
@@ -17,7 +17,7 @@ const informationSummaryData = [
   {
     id: 3,
     title: "Happy Clients",
-    description: "10",
+    description: "40+",
   },
 ];
 
@@ -36,9 +36,9 @@ const Introduction = () => {
             </span>
           </p>
           <p className="text-xs xxs:text-lg lg:text-[18px] my-6">
-            I'm a Freelance <span className="bg-highlight">UI/UX Designer</span>{" "},
-            <span className="bg-highlight">Website Developer</span>
-            and <span className="bg-highlight">Android/iOS App Developer</span> based in
+            I'm a Freelance <span className="font-bold text-pink-500">UI/UX Designer</span>
+            <span className="font-bold text-pink-500bg-highlight">Websites Developer</span>
+            and <span className="font-bold text-pink-500">Android,iOS and Desktop Apps Developer</span> based in
             Dar es salaam, Tanzania. I strives to build immersive and beautiful web
             applications through carefully crafted code and user-centric design.
           </p>
