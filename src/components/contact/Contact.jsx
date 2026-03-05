@@ -11,7 +11,7 @@ const addressData = [
   {
     icon: faLocationDot,
     title: "Address",
-    description: "Dar es salaam, 30",
+    description: "Dar es salaam-Tanzania",
     link: "https://www.google.com/maps/place/Dar+es+Salaam,+Tanzania"
   },
   {
@@ -22,9 +22,9 @@ const addressData = [
   },
   {
     icon: faPhone,
-    title: "Call Me Now",
-    description: "+255 678691586",
-    link: "tel:+255678691586"
+    title: "Call me now",
+    description: "+255 622491586",
+    link: "tel:+255622491586"
   },
 ];
 

@@ -3,7 +3,7 @@ import utaanisec from "../../assets/images/utaanisec.jpg";
 
 const brandLogos = [
   {
-    src: "https://www.bakita.go.tz/site/images/bakita.png",
+    src: "https://i.imgur.com/x2jNnQGl.png",
     alt: "BAKITA Logo",
   },
   {
@@ -15,7 +15,7 @@ const brandLogos = [
     alt: "CRDB Logo",
   },
   {
-    src: "https://i.imgur.com/bsJsPON.jpeg",
+    src: "https://i.imgur.com/bsJsPONl.jpeg",
     alt: "Utaani Secondary School Logo",
   },
   {
