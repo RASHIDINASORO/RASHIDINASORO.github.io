@@ -28,21 +28,19 @@ const projects = [
     title: "Agregator Platform",
     description:
       "A platform built that provides quick payments for a particular service. The platform offers various payment options to help customers to pay for a services.",
-    image: "/images/agregate.png",
-    githubLink: "https://github.com/RASHIDINASORO/agregator",
-    liveLink: "#",
-    techStack: ["Node.js", "Express", "Pesapal", "MySQL" ],
+    image: "/images/agregator.gif",
+    liveLink: "https://agregator-zeta.vercel.app",
+    techStack: ["Node.js", "Express", "Pesapal", "PostgreSQL" ],
   },
-  // {
-  //   id: 4,
-  //   title: "Neutralfy",
-  //   description:
-  //     "Neutralfy is a comprehensive carbon credit marketplace platform that democratizes carbon markets for Africa, It provides AI-driven verification, blockchain technology, and a multi-stakeholder ecosystem.",
-  //   image: "/images/neutralfy.png",
-  //   githubLink: "https://github.com/askmgm/neutralfy",
-  //   liveLink: "#",
-  //   techStack: ["React", "Express", "MySQL", "Node.js"],
-  // },
+  {
+    id: 4,
+    title: "AAIS School Admission System",
+    description:
+      "A modern school admission system designed to streamline the application process and improve administrative efficiency.",
+    image: "/images/AAIS-school.gif",
+    liveLink: "https://academic-school.vercel.app",
+    techStack: ["React", "Express", "MySQL", "Node.js"],
+  },
 ];
 
 const Projects = () => {
