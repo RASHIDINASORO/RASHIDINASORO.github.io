@@ -34,10 +34,10 @@ const projects = [
   },
   {
     id: 4,
-    title: "AAIS School Admission System",
+    title: "AAIS Schools Admission System",
     description:
       "A modern school admission system designed to streamline the application process and improve administrative efficiency.",
-    image: "/images/AAIS-school.gif",
+    image: "/images/AAIS-schools.gif",
     liveLink: "https://academic-school.vercel.app",
     techStack: ["React", "Express", "MySQL", "Node.js"],
   },
