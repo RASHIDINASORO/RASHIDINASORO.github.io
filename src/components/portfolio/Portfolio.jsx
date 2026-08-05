@@ -5,6 +5,24 @@ import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 const projects = [
   {
     id: 1,
+    title: "Tanbei e-commerce",
+    description:
+      "A streamlined e-commerce platform built to simplify access to everyday products and essential services.",
+    image: "/images/tanbei.jpg",
+    liveLink: "https://tanbei.netlify.app/",
+    techStack: ["React", "TailwindCSS", "Flutter", "PostgresSQL", "Next.js"],
+  },
+  {
+    id: 2,
+    title: "Kiisha Security website",
+    description:
+      "A sleek corporate website showcasing security services, company achievements, and client solutions.",
+    image: "/images/kiisha.jpg",
+    liveLink: "https://kiishasecurity.netlify.app/",
+    techStack: ["React", "TailwindCSS"],
+  },
+  {
+    id: 3,
     title: "Security Monitoring Dashboard",
     description:
       "A full-stack application that provides real-time monitoring of security concerns. Seamlessly detect misinformation from social media platforms like facebook and instagram, detect forged document like cards, detect phishing sms in real-time!",
@@ -14,32 +32,39 @@ const projects = [
     techStack: ["Python", "Flask", "Pandas"],
   },
   {
-    id: 2,
+    id: 4,
     title: "Kilimolink ",
     description:
       "A responsive website for agriculture business. Features a clean and modern design, easy navigation, and a responsive layout.",
     image: "/images/prices management.png",
     githubLink: "https://github.com/RASHIDINASORO/kilimo-link",
     liveLink: "#",
-    techStack: ["Node.js", "SQLite", "Express.js"],
+    techStack: ["React", "TailwindCSS", "Node.js", "SQLite", "Express.js"],
   },
   {
-    id: 3,
+    id: 5,
     title: "Agregator Platform",
     description:
       "A platform built that provides quick payments for a particular service. The platform offers various payment options to help customers to pay for a services.",
     image: "/images/agregator.gif",
     liveLink: "https://agregator-zeta.vercel.app",
-    techStack: ["Node.js", "Express", "Pesapal", "PostgreSQL" ],
+    techStack: [
+      "React",
+      "TailwindCSS",
+      "Node.js",
+      "Express",
+      "Pesapal",
+      "PostgreSQL",
+    ],
   },
   {
-    id: 4,
+    id: 6,
     title: "AAIS Schools Admission System",
     description:
       "A modern school admission system designed to streamline the application process and improve administrative efficiency.",
     image: "/images/AAIS-schools.gif",
     liveLink: "https://academic-school.vercel.app",
-    techStack: ["React", "Express", "MySQL", "Node.js"],
+    techStack: ["React", "TailwindCSS", "Express", "MySQL", "Node.js"],
   },
 ];
 
@@ -84,7 +109,9 @@ const Projects = () => {
 
               {/* Project Details */}
               <div className="w-full lg:w-1/2">
-                <h3 className="text-2xl font-bold mb-3 text-gray-800">{project.title}</h3>
+                <h3 className="text-2xl font-bold mb-3 text-gray-800">
+                  {project.title}
+                </h3>
                 <p className="text-gray-600 mb-6">{project.description}</p>
 
                 {/* Tech Stack */}
@@ -150,6 +177,3 @@ const Projects = () => {
 };
 
 export default Projects;
-
-
-
