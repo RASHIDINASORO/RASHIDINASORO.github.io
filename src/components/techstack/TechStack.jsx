@@ -3,15 +3,15 @@ import { motion } from "framer-motion";
 import { FaReact, FaDocker, FaGit, FaJs, FaPython, FaHtml5, FaCss3Alt, FaJava, FaPhp, FaNodeJs } from "react-icons/fa";
 import {
   SiExpress,
+  SiFastapi,
   SiFlutter,
   SiMongodb,
+  SiNextdotjs,
   SiPostgresql,
   SiTypescript,
   SiFigma,
-  SiNextdotjs,
   SiC,
   SiDart,
-  SiDjango,
   SiFlask,
   SiMysql,
   SiSqlite,
@@ -94,9 +94,9 @@ const techStack = [
     link: "https://nodejs.org",
   },
   {
-    name: "Django",
-    icon: <SiDjango className="w-12 h-12 text-green-800" />,
-    link: "https://www.djangoproject.com",
+    name: "FastAPI",
+    icon: <SiFastapi className="w-12 h-12 text-green-600" />,
+    link: "https://fastapi.tiangolo.com",
   },
   {
     name: "Flask",
@@ -107,6 +107,16 @@ const techStack = [
     name: "MongoDB",
     icon: <SiMongodb className="w-12 h-12 text-green-500" />,
     link: "https://www.mongodb.com",
+  },
+  {
+    name: "PostgreSQL",
+    icon: <SiPostgresql className="w-12 h-12 text-blue-600" />,
+    link: "https://www.postgresql.org",
+  },
+  {
+    name: "Next.js",
+    icon: <SiNextdotjs className="w-12 h-12 text-gray-900" />,
+    link: "https://nextjs.org",
   },
   {
     name: "MySQL",
