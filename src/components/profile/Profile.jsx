@@ -19,7 +19,6 @@ const Profile = () => {
               alt=""
             />
           </div>
-         
         </div>
 
         <div className="max-sm:w-full w-[33rem]">
@@ -28,14 +27,19 @@ const Profile = () => {
           </h3>
           <div className="bg-white p-8 rounded-2xl shadow-lg max-w-3xl mx-auto transform hover:scale-105 transition-transform duration-300">
             <div className="flex flex-col md:flex-row items-center gap-8">
-              
               <div className="text-center md:text-left">
                 <h4 className="text-2xl font-bold text-gray-800 mb-2">
                   University of Dar es Salaam
                 </h4>
-                <p className="text-lg text-blue-600 mb-2">BSc in Computer Science</p>
+                <p className="text-lg text-blue-600 mb-2">
+                  BSc in Computer Science
+                </p>
                 <p className="text-gray-500 flex items-center justify-center md:justify-start gap-2">
-                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                  <svg
+                    className="w-5 h-5"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
                     <path d="M10 2a6 6 0 00-6 6v3.586l-.707.707A1 1 0 004 14h12a1 1 0 00.707-1.707L16 11.586V8a6 6 0 00-6-6zM10 18a3 3 0 01-3-3h6a3 3 0 01-3 3z" />
                   </svg>
                   2022 - 2025
@@ -46,7 +50,7 @@ const Profile = () => {
           <div className="mt-8 flex max-md:justify-center">
             <a
               className="btn xxs:btn-lg px-6 max-xs:px-2 xxs:py-3 btn-primary text-xs xxs:text-[14px] sm:text-[16px]"
-              href="#portfolio"
+              href="portfolio"
             >
               My Projects
             </a>
