@@ -70,7 +70,7 @@ const projects = [
 
 const Projects = () => {
   return (
-    <section id="projects" className="py-20 bg-white">
+      <section id="portfolio" className="py-20 bg-white">
       <div className="container mx-auto px-4 max-w-6xl">
         <motion.div
           className="mb-16 text-center"

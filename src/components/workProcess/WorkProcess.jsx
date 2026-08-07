@@ -127,7 +127,7 @@ const techStack = [
 
 const About = () => {
   return (
-    <section id="about" className="py-24 bg-gradient-to-b from-gray-50 to-white">
+    <section id="work-process" className="py-24 bg-gradient-to-b from-gray-50 to-white">
       <div className="container mx-auto px-4 max-w-6xl">
         {/* Programming Languages Section */}
         <motion.div
