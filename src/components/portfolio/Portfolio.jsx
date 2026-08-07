@@ -18,7 +18,7 @@ const projects = [
     description:
       "A sleek corporate website showcasing security services, company achievements, and client solutions.",
     image: "/images/kiisha.jpg",
-    liveLink: "https://kiishasecurity.netlify.app/",
+    liveLink: "https://kiishaco.netlify.app/",
     techStack: ["React", "TailwindCSS"],
   },
   {
