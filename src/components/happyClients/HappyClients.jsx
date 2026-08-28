@@ -46,9 +46,9 @@ const HappyClients = () => {
                 alt={logo.alt}
                 className="h-16 w-auto object-contain max-w-full"
               />
-              <p className="mt-2 text-xs sm:text-sm font-semibold">
+              <span className="mt-2 text-xs sm:text-sm font-semibold">
                 {logo.alt.replace(" Logo", "")}
-              </p>
+              </span>
             </span>
           ))}
         </p>

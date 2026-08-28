@@ -5,6 +5,15 @@ import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 const projects = [
   {
     id: 1,
+    title: "Desktop AI powered CV Builder",
+    description:
+      "A desktop application that simplifies the process of creating professional ATS resumes and CVs with an intuitive interface.",
+    image: "/images/Desktop-cv-builder.jpg",
+    liveLink: "#",
+    techStack: ["Flutter", "Google AI Model", "Contact now to get the app"],
+  },
+  {
+    id: 2,
     title: "AAIS Schools Admission System",
     description:
       "A modern school admission system designed to streamline the application process and improve administrative efficiency.",
@@ -13,7 +22,7 @@ const projects = [
     techStack: ["React", "TailwindCSS", "Express", "MySQL", "Node.js"],
   },
   {
-    id: 2,
+    id: 3,
     title: "Tanbei e-commerce",
     description:
       "A streamlined e-commerce platform built to simplify access to everyday products and essential services.",
@@ -22,7 +31,7 @@ const projects = [
     techStack: ["React", "TailwindCSS", "Flutter", "PostgresSQL", "Next.js"],
   },
   {
-    id: 3,
+    id: 4,
     title: "Kiisha Security website",
     description:
       "A sleek corporate website showcasing security services, company achievements, and client solutions.",
@@ -31,7 +40,7 @@ const projects = [
     techStack: ["React", "TailwindCSS"],
   },
   {
-    id: 4,
+    id: 5,
     title: "Security Monitoring Dashboard",
     description:
       "A full-stack application that provides real-time monitoring of security concerns. Seamlessly detect misinformation from social media platforms like facebook and instagram, detect forged document like cards, detect phishing sms in real-time!",
@@ -41,7 +50,7 @@ const projects = [
     techStack: ["Python", "Flask", "Pandas"],
   },
   {
-    id: 5,
+    id: 6,
     title: "Kilimolink ",
     description:
       "A responsive website for agriculture business. Features a clean and modern design, easy navigation, and a responsive layout.",
@@ -51,7 +60,7 @@ const projects = [
     techStack: ["React", "TailwindCSS", "Node.js", "SQLite", "Express.js"],
   },
   {
-    id: 6,
+    id: 7,
     title: "Agregator Platform",
     description:
       "A platform built that provides quick payments for a particular service. The platform offers various payment options to help customers to pay for a services.",
@@ -70,7 +79,7 @@ const projects = [
 
 const Projects = () => {
   return (
-      <section id="portfolio" className="py-20 bg-white">
+    <section id="portfolio" className="py-20 bg-white">
       <div className="container mx-auto px-4 max-w-6xl">
         <motion.div
           className="mb-16 text-center"

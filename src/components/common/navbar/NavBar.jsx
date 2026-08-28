@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import logo from "../../../assets/logo.jpg";
+import logo from "/images/logo.png";
 import { Link } from "react-scroll";
 
 const navItems = [
@@ -58,10 +58,41 @@ const NavBar = () => {
           : "bg-white border-white"
       } z-50 transition-all duration-1000`}
     >
-      <div className="navbar flex justify-between mx-auto content">
-        <div className="flex items-center justify-between">
-          <div className="dropdown">
-            <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+      <div className="navbar flex justify-between items-center mx-auto content">
+        {/* Logo */}
+        <Link
+          href="#introduction"
+          to={`introduction`}
+          smooth={true}
+          duration={900}
+          className="flex items-center border-0"
+        >
+          <img src={logo} className="h-8 sm:h-14 rounded-2xl" alt="logo" />
+          <p className="text-2xl sm:text-[32px] my-auto ms-[12px] font-semibold">
+            {/* Rashidi Hasani */}
+          </p>
+        </Link>
+
+        {/* Right side: Desktop nav + Contact + Mobile hamburger */}
+        <div className="flex items-center">
+          <ul className="hidden lg:flex menu menu-horizontal text-[16px] font-medium md:shrink-0">
+            {menu}
+          </ul>
+          <p className="hidden lg:block">
+            <Link
+              className="btn btn-sm xs:btn-md sm:btn-lg btn-primary"
+              href="#contact"
+              to={`contact`}
+              smooth={true}
+              duration={900}
+            >
+              Contact
+            </Link>
+          </p>
+
+          {/* Mobile hamburger */}
+          <div className="dropdown dropdown-end lg:hidden">
+            <div tabIndex={0} role="button" className="btn btn-ghost">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-5 w-5"
@@ -73,47 +104,34 @@ const NavBar = () => {
                   strokeLinecap="round"
                   strokeLinejoin="round"
                   strokeWidth="2"
-                  d="M4 6h16M4 12h8m-8 6h16"
+                  d="M4 6h16M4 12h16M4 18h16"
                 />
               </svg>
             </div>
             <ul
               tabIndex={0}
-              className={`menu menu-lg dropdown-content rounded-box z-1 mt-3 w-lvw p-2 shadow font-semibold flex-nowrap bg-white text-black`}
+              className={`menu dropdown-content rounded-box z-50 mt-3 w-56 p-2 shadow font-semibold flex-nowrap bg-white text-black`}
             >
               {menu}
+              <li>
+                <Link
+                  onClick={handleMenuClick}
+                  to="contact"
+                  smooth={true}
+                  duration={1000}
+                  spy={true}
+                  offset={-140}
+                  activeStyle={{
+                    backgroundColor: "#9929fb",
+                    color: "white",
+                  }}
+                  className={`hover:text-picto-primary px-5 py-3 mx-1`}
+                >
+                  Contact
+                </Link>
+              </li>
             </ul>
           </div>
-
-          <Link
-            href="#introduction"
-            to={`introduction`}
-            smooth={true}
-            duration={900}
-            className="flex items-center border-0 lg:max-xxl:ps-5"
-          >
-            <img src={logo} className="h-8 sm:h-14 rounded-2xl" alt="logo" />
-            <p className="text-2xl sm:text-[32px] my-auto ms-[12px] font-semibold">
-              {/* Rashidi Hasani */}
-            </p>
-          </Link>
-        </div>
-
-        <div className="lg:flex items-center">
-          <ul className="hidden lg:flex menu menu-horizontal text-[16px] font-medium md:shrink-0">
-            {menu}
-          </ul>
-          <p className="">
-            <Link
-              className="btn btn-sm xs:btn-md sm:btn-lg btn-primary"
-              href="#contact"
-              to={`contact`}
-              smooth={true}
-              duration={900}
-            >
-              Contact
-            </Link>
-          </p>
         </div>
       </div>
     </div>

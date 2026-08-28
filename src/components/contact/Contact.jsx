@@ -1,11 +1,10 @@
 import {
-  faEnvelope,
-  faLocationDot,
-  faPhone,
+  faEnvelope,
+  faLocationDot,
+  faPhone,
 } from "@fortawesome/free-solid-svg-icons";
 import Address from "./Address";
 import Form from "./Form";
-import SocialMedia from "../common/socialMedia/SocialMedia";
 
 const addressData = [
   {
@@ -30,7 +29,7 @@ const addressData = [
 
 const Contact = () => {
   return (
-    <div className="relative -bottom-15 -mt-15 z-10 px-2">
+    <div className="relative z-10 px-2 mt-15">
       <div
         className="content p-4 md:p-10 lg:p-22 bg-white rounded-2xl shadow-[0px_0px_90px_9px_rgba(0,_0,_0,_0.1)]"
         id="contact"
@@ -50,11 +49,8 @@ const Contact = () => {
               {addressData.map((item, index) => (
                 <Address item={item} key={index} />
               ))}
-            </div>
-            <div className="w-full max-lg:text-center max-md:mb-4">
-              <SocialMedia />
-            </div>
-          </div>
+            </div>
+          </div>
           <div className="w-full overflow-y-scroll py-6.5">
             <p className="text-xl mb-2 xs:text-2xl sm:text-2xl md:text-[38px] font-semibold text-[#132238] lg:hidden text-center">
               Let’s discuss your Project

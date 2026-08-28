@@ -1,54 +1,119 @@
-import logo from "../../../assets/logo.jpg";
+import logo from "/images/logo.png";
 
-/* Footer nabLinks */
-const navItems = [
-  { id: 1, name: "Home", url: "Home" },
-  { id: 2, name: "About", url: "About" },
-  { id: 3, name: "Process", url: "Process" },
-  { id: 4, name: "Portfolio", url: "Portfolio" },
-  // { id: 5, name: "Blog", url: "Blog" },
-  { id: 6, name: "Services", url: "Services" },
-  { id: 7, name: "Contact", url: "Contact" },
+const quickLinks = [
+  { id: 1, name: "Home", url: "introduction" },
+  { id: 2, name: "About", url: "profile" },
+  { id: 3, name: "Portfolio", url: "portfolio" },
+  { id: 4, name: "Contact", url: "contact" },
 ];
+
+const services = [
+  { id: 1, name: "User Experience (UX)" },
+  { id: 2, name: "User Interface (UI)" },
+  { id: 3, name: "Web Development" },
+  { id: 4, name: "Mobile App Development" },
+];
+
 const copyrightYear = new Date().getFullYear();
 
 const Footer = () => {
   return (
-    <div className="pt-25 md:pt-40 content max-2xl:px-3">
-      <div className="flex max-md:flex-col justify-between mx-0 items-center h-full w-full text-neutral-200">
-        {/* <a href="#" className="flex items-center border-0">
-          <img src={logo} className="h-8 sm:h-14 rounded-2xl" alt="logo" />
-          <p className="text-3xl sm:text-[32px] my-auto ms-[12px] font-semibold">
-            Rashidi Hasani
-          </p>
-        </a> */}
-        <div className="mx-7 max-md:my-7 text-center">
-          {navItems.map((item) => (
-            <a
-              key={item.id}
-              className="mx-2 group inline-block relative w-fit text-[12px] sm:text-[16px]"
-              href={`#${item.url.toLowerCase()}`}
-            >
-              {item.name}
-              <span className="absolute left-0 bottom-0 h-0.5 w-full bg-white scale-x-0 duration-300 group-hover:scale-x-100"></span>
+    <footer className="bg-gray-900 text-gray-300">
+      <div className="container mx-auto px-4 max-w-6xl">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 py-16">
+          {/* Brand Column */}
+          <div className="lg:col-span-1">
+            <a href="#introduction" className="flex items-center border-0 mb-4">
+              <img src={logo} className="h-10 rounded-xl" alt="logo" />
+              <p className="text-2xl font-semibold text-white ms-3">
+                Rashidi Hasani
+              </p>
             </a>
-          ))}
+            <p className="text-gray-400 text-sm leading-relaxed mb-6">
+              Crafting digital experiences through clean code and thoughtful
+              design. Specialized in building modern web and mobile
+              applications.
+            </p>
+          </div>
+
+          {/* Quick Links */}
+          <div>
+            <h3 className="text-white text-lg font-semibold mb-6">
+              Quick Links
+            </h3>
+            <ul className="space-y-3">
+              {quickLinks.map((item) => (
+                <li key={item.id}>
+                  <a
+                    href={`#${item.url.toLowerCase()}`}
+                    className="text-gray-400 hover:text-white transition-colors duration-300 text-sm"
+                  >
+                    {item.name}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Services */}
+          <div>
+            <h3 className="text-white text-lg font-semibold mb-6">Services</h3>
+            <ul className="space-y-3">
+              {services.map((item) => (
+                <li key={item.id}>
+                  <span className="text-gray-400 text-sm">{item.name}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Contact Info */}
+          <div>
+            <h3 className="text-white text-lg font-semibold mb-6">
+              Get In Touch
+            </h3>
+            <ul className="space-y-4">
+              <li className="text-gray-400 text-sm">
+                <span className="block text-white font-medium mb-1">
+                  Location
+                </span>
+                Dar es Salaam, Tanzania
+              </li>
+              <li className="text-gray-400 text-sm">
+                <span className="block text-white font-medium mb-1">Email</span>
+                <a
+                  href="mailto:rashidinasoro@gmail.com"
+                  className="hover:text-white transition-colors duration-300"
+                >
+                  rashidinasoro@gmail.com
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <p className="text-[12px] sm:text-[16px]">
-          Copyright &copy; {copyrightYear} Rashidi.
-        </p>
+
+        {/* Bottom Bar */}
+        <div className="border-t border-gray-800 py-6">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+            <p className="text-gray-400 text-sm">
+              Copyright &copy; {copyrightYear} Rashidi Hasani. All rights
+              reserved.
+            </p>
+            <p className="text-gray-500 text-sm">
+              Developed with love by{" "}
+              <a
+                href="https://rashidinasoro.github.io/"
+                className="text-white hover:text-blue-400 transition-colors duration-300 font-medium"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Rashidi Hasani
+              </a>
+            </p>
+          </div>
+        </div>
       </div>
-      <p className="text-white text-center max-xs:text-[12px] max-md:text-[14px] w-full py-10">
-        Developed with ❤️ by{" "}
-        <a
-          href="https://rashidinasoro.github.io/"
-          className="underline font-bold"
-          target="_blank"
-        >
-          Rashidi Hasani
-        </a>
-      </p>
-    </div>
+    </footer>
   );
 };
 
