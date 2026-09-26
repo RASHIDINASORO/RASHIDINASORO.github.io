@@ -36,7 +36,7 @@ const projects = [
     description:
       "A sleek corporate website showcasing security services, company achievements, and client solutions.",
     image: "/images/kiisha.jpg",
-    liveLink: "https://kiishasecurity,/",
+    liveLink: "https://kiishasecurity.co.tz/",
     techStack: ["React", "TailwindCSS"],
   },
   {
@@ -153,7 +153,7 @@ const Projects = () => {
                     rel="noopener noreferrer"
                     className="flex items-center gap-2 px-4 py-2 live-demo-button bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors duration-300"
                   >
-                    <FaExternalLinkAlt /> Live Demo
+                    <FaExternalLinkAlt /> Live Link
                   </a>
                 </div>
               </div>
