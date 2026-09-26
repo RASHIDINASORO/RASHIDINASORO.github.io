@@ -27,7 +27,7 @@ const projects = [
     description:
       "A streamlined e-commerce platform built to simplify access to everyday products and essential services.",
     image: "/images/tanbei.jpg",
-    liveLink: "https://tanbei.netlify.app/",
+    liveLink: "https://tanbei.co.tz/",
     techStack: ["React", "TailwindCSS", "Flutter", "PostgresSQL", "Next.js"],
   },
   {
@@ -36,7 +36,7 @@ const projects = [
     description:
       "A sleek corporate website showcasing security services, company achievements, and client solutions.",
     image: "/images/kiisha.jpg",
-    liveLink: "https://kiishaco.netlify.app/",
+    liveLink: "https://kiishasecurity,/",
     techStack: ["React", "TailwindCSS"],
   },
   {
