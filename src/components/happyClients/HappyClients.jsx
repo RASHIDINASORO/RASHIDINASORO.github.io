@@ -22,6 +22,22 @@ const brandLogos = [
     src: "https://youthteamup.org/wp-content/uploads/2024/06/YTU_logo-removebg-preview-100x100.png",
     alt: "Youthteam Up Logo",
   },
+  {
+    src: "/images/al-rahmah schools.png",
+    alt: "Al Rahmah Schools Logo",
+  },
+  {
+    src: "/images/best technical services.png",
+    alt: "Best Technical Services Logo",
+  },
+  {
+    src: "/images/exxonim Company Ltd.png",
+    alt: "Exxonim Company Ltd Logo",
+  },
+  {
+    src: "/images/kiisha Security Ltd.jpeg",
+    alt: "Kiisha Security Ltd Logo",
+  },
 ];
 
 const HappyClients = () => {

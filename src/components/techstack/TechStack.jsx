@@ -1,6 +1,17 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { FaReact, FaDocker, FaGit, FaJs, FaPython, FaHtml5, FaCss3Alt, FaJava, FaPhp, FaNodeJs } from "react-icons/fa";
+import {
+  FaReact,
+  FaDocker,
+  FaGit,
+  FaJs,
+  FaPython,
+  FaHtml5,
+  FaCss3Alt,
+  FaJava,
+  FaPhp,
+  FaNodeJs,
+} from "react-icons/fa";
 import {
   SiExpress,
   SiFastapi,
@@ -29,7 +40,7 @@ const languages = [
     icon: <FaPython className="w-12 h-12 text-blue-800" />,
     link: "https://www.python.org",
   },
-  
+
   {
     name: "Java",
     icon: <FaJava className="w-12 h-12 text-red-500" />,
@@ -137,7 +148,10 @@ const techStack = [
 
 const About = () => {
   return (
-    <section id="techstack" className="py-24 bg-gradient-to-b from-gray-50 to-white">
+    <section
+      id="techstack"
+      className="py-10 bg-gradient-to-b from-gray-50 to-white"
+    >
       <div className="container mx-auto px-4 max-w-6xl">
         {/* Programming Languages Section */}
         <motion.div

@@ -6,22 +6,22 @@ import SocialMedia from "../common/socialMedia/SocialMedia";
 const Profile = () => {
   return (
     <div
-      className={`relative mx-4 xxl:mx-0.5 -bottom-20 lg:-bottom-28 z-10 rounded-2xl drop-shadow-2xl max-xl:mb-5 shadow-white xl:p-28 lg:p-20 md:p-16 sm:p-10 p-4`}
+      className={`relative mx-4 xxl:mx-0.5 -mt-16 lg:-mt-24 z-10 rounded-2xl drop-shadow-2xl max-xl:mb-5 shadow-white xl:p-28 lg:p-20 md:p-16 sm:p-10 p-4 mt-10 sm:mt-0`}
       id="profile"
     >
       <div className="flex max-md:flex-col justify-between items-center gap-6">
         {/* Profile image */}
-        <div className="xxl:max-w-106 w-auto h-auto xxl:max-h-126">
-          <div className="max-w-106 h-117 bg-white object-fill overflow-hidden rounded-xl">
+        <div className="xxl:max-w-106 w-full max-w-xs mx-auto lg:w-auto h-auto xxl:max-h-126">
+          <div className="max-w-106 h-117 bg-white object-fill overflow-hidden rounded-xl mx-auto">
             <img
-              className=" h-[100%] object-contain border-4 border-white rounded-xl hover:scale-105 transition-transform duration-300"
+              className=" h-[100%] w-full object-contain border-4 border-white rounded-xl hover:scale-105 transition-transform duration-300"
               src={udsm}
               alt=""
             />
           </div>
         </div>
 
-        <div className="max-sm:w-full w-[33rem]">
+        <div className="max-sm:w-full w-full sm:w-[33rem]">
           <h3 className="text-3xl font-bold mb-12 text-center text-gray-800">
             Educational Journey
           </h3>

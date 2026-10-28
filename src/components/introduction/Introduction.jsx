@@ -24,7 +24,7 @@ const informationSummaryData = [
 const Introduction = () => {
   return (
     <div
-      className="flex max-lg:flex-col-reverse sm:justify-between pt-10 lg:pt-31.5 lg:mb-27.5 max-xl:gap-2 p-2 max-xxl:px-4"
+      className="flex max-lg:flex-col-reverse sm:justify-between pt-4 lg:pt-4.5 lg:mb-27.5 max-xl:gap-2 p-2 max-xxl:px-4"
       id="introduction"
     >
       <div className="w-full flex flex-col justify-between max-lg:text-center">

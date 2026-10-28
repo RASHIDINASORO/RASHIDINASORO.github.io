@@ -32,6 +32,15 @@ const projects = [
   },
   {
     id: 4,
+    title: "Best Technical Services",
+    description:
+      "A professional website for technical services showcasing expertise, services offered, and client solutions.",
+    image: "/images/besttech.jpg",
+    liveLink: "https://best-technician.vercel.app/",
+    techStack: ["React", "TailwindCSS"],
+  },
+  {
+    id: 5,
     title: "Kiisha Security website",
     description:
       "A sleek corporate website showcasing security services, company achievements, and client solutions.",
@@ -40,7 +49,7 @@ const projects = [
     techStack: ["React", "TailwindCSS"],
   },
   {
-    id: 5,
+    id: 6,
     title: "Security Monitoring Dashboard",
     description:
       "A full-stack application that provides real-time monitoring of security concerns. Seamlessly detect misinformation from social media platforms like facebook and instagram, detect forged document like cards, detect phishing sms in real-time!",
@@ -50,7 +59,7 @@ const projects = [
     techStack: ["Python", "Flask", "Pandas"],
   },
   {
-    id: 6,
+    id: 7,
     title: "Kilimolink ",
     description:
       "A responsive website for agriculture business. Features a clean and modern design, easy navigation, and a responsive layout.",
@@ -60,7 +69,7 @@ const projects = [
     techStack: ["React", "TailwindCSS", "Node.js", "SQLite", "Express.js"],
   },
   {
-    id: 7,
+    id: 8,
     title: "Agregator Platform",
     description:
       "A platform built that provides quick payments for a particular service. The platform offers various payment options to help customers to pay for a services.",
