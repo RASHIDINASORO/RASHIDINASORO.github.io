@@ -3,6 +3,7 @@ import {
   faLocationDot,
   faPhone,
 } from "@fortawesome/free-solid-svg-icons";
+import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import Address from "./Address";
 import Form from "./Form";
 
@@ -24,6 +25,12 @@ const addressData = [
     title: "Call me now",
     description: "+255 622491586",
     link: "tel:+255622491586"
+  },
+  {
+    icon: faWhatsapp,
+    title: "WhatsApp",
+    description: "+255 622491586",
+    link: "https://wa.me/255622491586"
   },
 ];
 
